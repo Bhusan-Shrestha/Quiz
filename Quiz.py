@@ -46,18 +46,18 @@ def main():
     input("Press Enter to start")
 
     # Loop over all questions
-    for a in range(len(questions)):
-        print(f"\nQuestion {a + 1}: {questions[a]}")
-        print(f"\nOptions : \n{options[a]}")
+    for i in range(len(questions)):
+        print(f"\nQuestion {i + 1}: {questions[i]}")
+        print(f"\nOptions : \n{options[i]}")
         answer = input("\nYour answer: ").lower()
 
-        if answer == answers[a].lower():
+        if answer == answers[i].lower():
             print("\nYour answer was correct!")
             score += 1
             
         else:
             print("Your answer was incorrect!")
-            print("Answer is "+answers[a])
+            print("Answer is "+answers[i])
             
     print("Game is over:")
 
