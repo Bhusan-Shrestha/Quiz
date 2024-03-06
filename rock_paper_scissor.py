@@ -20,29 +20,29 @@ def game(a, b, user1, computer, first, second, draw):
     else:
         if user1 == "rock":
             if computer == "paper":
-                print(f"{b} player wins.")
+                print(f"{b} wins.")
                 second += 1
 
             else:
-                print(f"{a} player wins.")
+                print(f"{a} wins.")
                 first += 1
 
         elif user1 == "paper":
             if computer == "scissor":
-                print(f"{b} player wins.")
+                print(f"{b} wins.")
                 second += 1
 
             else:
-                print(f"{a} player wins.")
+                print(f"{a} wins.")
                 first += 1
 
         elif user1 == "scissor":
             if computer == "rock":
-                print(f"{b} player wins.")
+                print(f"{b} wins.")
                 second += 1
 
             else:
-                print(f"{a} player wins.")
+                print(f"{a} wins.")
                 first += 1
 
     return first, second, draw
