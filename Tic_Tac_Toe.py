@@ -64,6 +64,14 @@ def play1(player1, player2, s, a, count):
                 print("Player 1 wins")
                 s[0] += 1
                 play_again(s)
+            elif a[3] == a[4] == a[5]:
+                print("Player 1 wins")
+                s[0] += 1
+                play_again(s)
+            elif a[6] == a[7] == a[8]:
+                print("Player 1 wins")
+                s[0] += 1
+                play_again(s)
             else:
                 for i in range(9):
                     if a[i] == "X" or a[i] == "O":
@@ -114,6 +122,14 @@ def play2(player1, player2, s, a, count):
             elif a[2] == a[4] == a[6]:
                 print("Player 2 wins")
                 s[1] += 1
+                play_again(s)
+            elif a[3] == a[4] == a[5]:
+                print("Player 1 wins")
+                s[0] += 1
+                play_again(s)
+            elif a[6] == a[7] == a[8]:
+                print("Player 1 wins")
+                s[0] += 1
                 play_again(s)
             else:
                 for i in range(9):
