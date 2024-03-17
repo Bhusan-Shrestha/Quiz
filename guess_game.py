@@ -1,11 +1,11 @@
 import random
-guess = random.randint(1,10)
+guess = random.randint(1, 10)
 
 guessed = 1
 for i in range(1, 4):
-    num=int(input("Guess a number between 1 to 10: "))
+    num = int(input("Guess a number between 1 to 10: "))
     if num == guess:
-        print("number found is {} in {} guesses".format(num,guessed))
+        print("number found is {} in {} guesses".format(num, guessed))
         break
     
     elif guessed == 3:
